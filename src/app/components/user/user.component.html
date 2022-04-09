@@ -1,0 +1,14 @@
+<div class="col s3">
+  <div class="card" appHover>
+    <div class="card-image">
+      <img src="{{user.image}}">
+      <span class="card-title" [ngClass]="{'selected': isSelect}">{{user.name | uppercase}}</span>
+    </div>
+    <div class="card-content">
+      <p>{{user.geo}}</p>
+    </div>
+    <div class="card-action">
+      <a (click)="onSelect()" class="waves-effect waves-light btn">select</a>
+    </div>
+  </div>
+</div>
